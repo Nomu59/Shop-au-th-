@@ -46,6 +46,30 @@ span img {
   margin-top: 5px;
 }
 
-.Logo {
-margin-right: 150px;
+
+
+.Connexion {
+  background-color: rgb(156, 156, 156);
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+#Ctn img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+#Ctn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+#Ctn div {
+  /* background-color: aqua; */
+  margin-top: 10px;
+  width: 200px;
+  text-align: center;
 }
