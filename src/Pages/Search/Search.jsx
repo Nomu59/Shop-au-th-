@@ -22,7 +22,7 @@ const Search = () => {
   };
 
   const updateRadio = (event) => {
-    setRadioValue(event.target.value); // Mettre à jour la valeur du bouton radio
+    setRadioValue(event.target.value);
   };
 
   const updatePrix = (event) => {
@@ -31,102 +31,118 @@ const Search = () => {
 
   return (
     <div>
-      <h1>Search</h1>
+      <h1>Rechercher un article</h1>
       <input
+        className="searchInput"
         type="text"
         id="search"
-        placeholder="Search for a product"
+        placeholder="Rechercher"
         onChange={updateSearch}
       />
 
-      <div>
-        <label for="star">1</label>
-        <input
-          type="radio"
-          id="choix1"
-          name="choix"
-          onChange={updateRadio}
-          value="1"
-        />
+      <div className="formCtn">
+        <div className="formRate">
+          <p>Trier par note</p>
 
-        <label for="star">2</label>
-        <input
-          type="radio"
-          id="choix2"
-          name="choix"
-          onChange={updateRadio}
-          value="2"
-        />
+          <label for="star">1</label>
+          <input
+            type="radio"
+            id="choix1"
+            name="choix"
+            onChange={updateRadio}
+            value="1"
+          />
+          <br />
 
-        <label for="star">3</label>
-        <input
-          type="radio"
-          id="choix3"
-          name="choix"
-          onChange={updateRadio}
-          value="3"
-        />
+          <label for="star">2</label>
+          <input
+            type="radio"
+            id="choix2"
+            name="choix"
+            onChange={updateRadio}
+            value="2"
+          />
+          <br />
 
-        <label for="star">4</label>
-        <input
-          type="radio"
-          id="choix4"
-          name="choix"
-          onChange={updateRadio}
-          value="4"
-        />
+          <label for="star">3</label>
+          <input
+            type="radio"
+            id="choix3"
+            name="choix"
+            onChange={updateRadio}
+            value="3"
+          />
+          <br />
 
-        <label for="star">5</label>
-        <input
-          type="radio"
-          id="choix5"
-          name="choix"
-          onChange={updateRadio}
-          value="5"
-        />
-      </div>
+          <label for="star">4</label>
+          <input
+            type="radio"
+            id="choix4"
+            name="choix"
+            onChange={updateRadio}
+            value="4"
+          />
+          <br />
 
-      <div>
-        <label for="prix1">5€</label>
-        <input
-          type="radio"
-          id="prix1"
-          name="prix"
-          value="5"
-          onChange={updatePrix}
-        />
-        <label for="prix2">10€</label>
-        <input
-          type="radio"
-          id="prix2"
-          name="prix"
-          value="10"
-          onChange={updatePrix}
-        />
-        <label for="prix3">25€</label>
-        <input
-          type="radio"
-          id="prix3"
-          name="prix"
-          value="25"
-          onChange={updatePrix}
-        />
-        <label for="prix4">50€</label>
-        <input
-          type="radio"
-          id="prix4"
-          name="prix"
-          value="50"
-          onChange={updatePrix}
-        />
-        <label for="prix5">100€</label>
-        <input
-          type="radio"
-          id="prix5"
-          name="prix"
-          value="100"
-          onChange={updatePrix}
-        />
+          <label for="star">5</label>
+          <input
+            type="radio"
+            id="choix5"
+            name="choix"
+            onChange={updateRadio}
+            value="5"
+          />
+        </div>
+        <br />
+
+        <div className="formPrix">
+          <p>Trier par prix</p>
+          <input
+            type="radio"
+            id="prix1"
+            name="prix"
+            value="5"
+            onChange={updatePrix}
+          />
+          <label for="prix1">5€</label>
+          <br />
+          <input
+            type="radio"
+            id="prix2"
+            name="prix"
+            value="10"
+            onChange={updatePrix}
+          />
+          <label for="prix2">10€</label>
+          <br />
+          <input
+            type="radio"
+            id="prix3"
+            name="prix"
+            value="25"
+            onChange={updatePrix}
+          />
+          <label for="prix3">25€</label>
+          <br />
+          <input
+            type="radio"
+            id="prix4"
+            name="prix"
+            value="50"
+            onChange={updatePrix}
+          />
+          <label for="prix4">50€</label>
+          <br />
+          <input
+            type="radio"
+            id="prix5"
+            name="prix"
+            value="100"
+            onChange={updatePrix}
+          />
+          <label for="prix5">100€</label>
+          <br />
+        </div>
       </div>
 
       <div id="Ctn">
@@ -145,7 +161,10 @@ const Search = () => {
             return (
               <div key={index} className="product">
                 <img src={product.image} alt={product.title} />
+                <p className="price">{product.price}€</p>
                 <p>{product.title}</p>
+                <br />
+                <p>{product.rating.rate}/5</p>
               </div>
             );
           }

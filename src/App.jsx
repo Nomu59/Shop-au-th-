@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-
+import "./assets/font/RobotoCondensed-Regular.ttf"
 import Navbar from "./components/navbar";
 import Login from "./Pages/Connexion/Login";
 import Search from "./Pages/Search/Search";
