@@ -1,0 +1,89 @@
+#Ctn img {
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+}
+
+#Ctn div:hover {
+  animation: Gazo 2s ease 0s infinite normal forwards;
+}
+
+#Ctn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+#Ctn div {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.searchInput {
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px 50px 10px 50px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* animation: Gazo2 2s ease 0s 1 normal forwards; */
+  transition: 0.4s;
+
+}
+
+.searchInput:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+.formPrix {
+  /* margin-left: 71px; */
+  padding: 10px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+  font-size: 20px;
+  animation: anim1 2s linear infinite;
+}
+
+.formRate {
+  /* float: right; */
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;
+  font-size: 20px;
+  text-align: end;
+  animation: anim1 2s linear infinite;
+}
+
+.formCtn p {
+  text-align: center;
+}
+.formCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

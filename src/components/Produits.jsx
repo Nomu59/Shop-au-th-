@@ -1,20 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Produits = () => {
-  // const params = useParams([]);
-  // const [produits, setProduits] = useState([]);
-  // console.log(params);
+const Product = ({ product }) => {
+  const navigate = useNavigate(); // pour utiliser useNavigate
 
-  // useEffect(() => {
-  //   fetch("https://fakestoreapi.com/products")
-  //     .then((res) => res.json())
-  //     .then((json) => setProduits(json));
-  // }, []);
+  const goToDesc = (id) => {
+    navigate("/produit/" + id); //recupere le product.id et redirige vers la bonne page
+  }
 
-  return;
-  <div>
-    <h1>Produits</h1>
-  </div>;
+  return (
+    <div className="product" onClick={()=>goToDesc(product.id)}> // quand tu clique ça appel la const GotoDesc
+      <img src={product.image} alt={product.title} />
+      <p className="price">{product.price}€</p>
+      <p>{product.title}</p>
+      <br />
+      <p>{product.rating.rate}/5</p>
+    </div>
+  );
 };
 
-export default Produits;
+export default Product;
