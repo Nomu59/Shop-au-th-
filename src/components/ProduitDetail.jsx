@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "../assets/css/productDetail.css";
+import Product from "./Produits";
 
 const ProduitDetail = () => {
   const [Produit, setProduit] = useState([]);
@@ -15,8 +17,18 @@ const ProduitDetail = () => {
 
   return (
     <div>
-      <h2>Détails du produit: {Produit.title}</h2>
-      <img src={Produit.image} alt={Produit.title} />
+      <div className="produitDesc">
+        <div className="divImg">
+          <img src={Produit.image} alt={Produit.title} />
+        </div>
+        <div className="divDesc">
+          <p className="produitTitle">{Produit.title}</p>
+          <p className="produitPrice">{Produit.price}€</p>
+          <p className="produitDescTxt">{Produit.description}</p>
+          {/* <p>{Produit.rating.rate}</p> */}
+          <a className="btn" href="#">Ajouter au panier</a>
+        </div>
+      </div>
     </div>
   );
 };

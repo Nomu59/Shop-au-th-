@@ -36,11 +36,12 @@ const Search = () => {
     <div>
       <h1>Rechercher un article</h1>
       <input
-        className="searchInput"
         type="text"
-        id="search"
-        placeholder="Rechercher"
+        autocomplete="off"
+        name="text"
+        class="input"
         onChange={updateSearch}
+        placeholder="Rechercher"
       />
 
       <div className="formCtn">

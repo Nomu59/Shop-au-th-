@@ -20,8 +20,8 @@ const Product = ({ product }) => {
     <div className="product" onClick={() => goToDesc(product.id)}>
       <img src={product.image} alt={product.title} />
       <p className="price">{product.price}€</p>
-      <p>{product.title}</p>
-      <p>{rateStar(product.rating.rate)} {product.rating.rate}/5</p> {/* appel la fonction avec le rate en param  */}
+      <p className="productTitle">{product.title}</p>
+      <p className="rate">{rateStar(product.rating.rate)} {product.rating.rate}/5</p> {/* appel la fonction avec le rate en param  */}
     </div>
   );
 };
