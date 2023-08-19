@@ -90,15 +90,52 @@
 /* animation: Gazo 2s ease 0s infinite normal forwards; */
 
 @keyframes Gazo2 {
-    0% {
-        opacity: 0;
-        transform: translateY(-250px);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  /*Haut*/
+  0% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes Gazo3 {
+  /*Bas*/
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes Gazo4 {
+  /*Gauche*/
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes Gazo5 {
+  /*Droite*/
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 /* animation: Gazo2 2s ease 0s 1 normal forwards; */
 
@@ -139,5 +176,45 @@
   }
   91% {
     background-color: rgb(255, 0, 127);
+  }
+}
+
+@keyframes rainbow-color {
+  100%,
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  8% {
+    color: rgb(255, 127, 0);
+  }
+  16% {
+    color: rgb(255, 255, 0);
+  }
+  25% {
+    color: rgb(127, 255, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  41% {
+    color: rgb(0, 255, 127);
+  }
+  50% {
+    color: rgb(0, 255, 255);
+  }
+  58% {
+    color: rgb(0, 127, 255);
+  }
+  66% {
+    color: rgb(0, 0, 255);
+  }
+  75% {
+    color: rgb(127, 0, 255);
+  }
+  83% {
+    color: rgb(255, 0, 255);
+  }
+  91% {
+    color: rgb(255, 0, 127);
   }
 }

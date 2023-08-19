@@ -9,19 +9,23 @@
   src: local("RobotoCondensed-Regular"),
     url("./assets/font/RobotoCondensed-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Aquatic";
+  src: local("Aquatic"),
+    url("./assets/font/AQUATIC.ttf") format("truetype");
+}
 
 h1 {
-  font-size: 30px;
+  /* font-size: 30px; */
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .app {
-  background-color: rgb(134, 154, 211);
-  height: 100%;
-  width: 100%;
+  /* background-color: rgb(134, 154, 211); */
+  background-image: url("./assets/img/bg.png");
+  /* background-color: aqua; */
+  background-size: contain;
+  background-size: 100%;
 }
-
-
-

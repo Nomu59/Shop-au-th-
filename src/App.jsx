@@ -12,6 +12,7 @@ import "./App.css";
 import "./assets/css/navbar.css";
 import "./assets/css/animation.css";
 import "./assets/font/RobotoCondensed-Regular.ttf";
+import "./assets/font/AQUATIC.ttf";
 
 function App() {
   return (

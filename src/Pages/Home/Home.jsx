@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "../../components/Produits.jsx";
 import "../../assets/css/home.css";
-import { Link } from "react-router-dom";
+import "../../assets/css/caroussel.css";
 
 const Home = () => {
   const [produitsData, setProduitsData] = useState([]);
@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Money Dynasty</h1>
+      <h1 className="boss">Money Dynasty</h1>
 
       <div className="caroussel">
         <input type="radio" name="position" />
@@ -35,7 +35,7 @@ const Home = () => {
       </div>
       {/* Caroussel que j'ai voler sans aucun respect */}
       <hr />
-      <h1>Nos produits phares:</h1>
+      <h2>Nos produits phares:</h2>
 
       <div className="Ctn">
         {produitsData.slice(0, 5).map((product, index) => ( //Slice pour afficher que les 5 premier, map pour crée un nouveau tableau product
