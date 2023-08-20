@@ -7,6 +7,7 @@ import Product from "./Produits";
 const ProduitDetail = () => {
   const [Produit, setProduit] = useState([]);
   const { id } = useParams(); //recupere l'id grace a une magie inconnu
+  
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/" + id) //fetch seulement le produit avec l'id
       .then((res) => res.json())

@@ -1,44 +1,32 @@
 import React, { useState, useEffect } from "react";
 import Product from "../../components/Produits.jsx";
+import Caroussel from "../../components/Caroussel";
+import axios from "axios";
 import "../../assets/css/home.css";
-import "../../assets/css/caroussel.css";
 
 const Home = () => {
   const [produitsData, setProduitsData] = useState([]);
 
-  // Récupérer les données
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((json) => {
-        setProduitsData(json);
+    axios.get("https://fakestoreapi.com/products")
+      .then(response => {
+        setProduitsData(response.data);
+      })
+      .catch(error => {
+        console.error("Une erreur s'est produite :", error);
       });
   }, []);
 
   return (
     <div>
-      <h1 className="boss">Money Dynasty</h1>
-
-      <div className="caroussel">
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" defaultChecked />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <main id="carousel">
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-        </main>
-      </div>
-      {/* Caroussel que j'ai voler sans aucun respect */}
-      <hr />
-      <h2>Nos produits phares:</h2>
-
-      <div className="Ctn">
-        {produitsData.slice(0, 5).map((product, index) => ( //Slice pour afficher que les 5 premier, map pour crée un nouveau tableau product
+      <h1 className="boss text-yellow-500 text-3xl">Money Dynasty</h1>
+      <Caroussel />
+      <hr className="rounded-full	 border mt-12 w-4/5 m-auto bg-gray-500" />
+      <h2 className="text-white text-center text-3xl mt-10">
+        Nos produits phares:
+      </h2>
+      <div className="Ctn flex flex-row flex-wrap justify-center">
+        {produitsData.slice(0, 5).map((product, index) => (
           <Product key={index} product={product} />
         ))}
       </div>

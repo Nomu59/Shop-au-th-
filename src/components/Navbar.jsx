@@ -3,34 +3,67 @@ import { Link } from "react-router-dom";
 import Cart from "../assets/img/Cart.png";
 import Logo from "../assets/img/logo.png";
 import SearchLogo from "../assets/img/Search.png";
-import "../assets/css/navbar.css"
+import "../assets/css/navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="Navbar">
-      <div className="divLogo">
-        <Link to="/">
-          <img className="Logo" src={Logo} height={80} width={80} alt="Logo" />
-        </Link>
-      </div>
-
-      <div className="divSearch">
-        <Link className="Search" to="Search">
-          Rechercher
-          <span>
-            <img src={SearchLogo} height={30} width={30} alt="" />
-          </span>
-        </Link>
-      </div>
-
-      <div className="divConnexion">
-        <Link className="Connexion" to="/Connexion">
-          Connexion
-        </Link>
-      </div>
-      <Link to="/Cart">
-        <img src={Cart} height={50} width={50} alt="Cart" />
-      </Link>
+    <nav className="">
+      <nav className="bg-white  dark:bg-black border-b rounded-2xl">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+          <a href="/" className="flex items-center">
+            <img
+              className="Logo"
+              src={Logo}
+              height={80}
+              width={80}
+              alt="Logo"
+            />
+          </a>
+          <div className="flex md:order-2">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+              <li>
+                <Link to="/Connexion">
+                  <a
+                    href="#"
+                    className="text-2xl block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white "
+                    aria-current="page"
+                  >
+                    Connexion
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+              <li>
+                <Link to="/Search">
+                  <a
+                    href="#"
+                    className="text-2xl block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    aria-current="page"
+                  >
+                    Rechercher
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link to="/Categorie">
+                  <a
+                    href="#"
+                    className="text-2xl block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >
+                    Categorie
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </nav>
   );
 };

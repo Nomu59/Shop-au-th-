@@ -1,4 +1,5 @@
 .caroussel {
+  
     height: 400px;
     margin: 0;
     display: grid;
@@ -8,10 +9,10 @@
     justify-items: center;
     animation: Gazo2 1s ease-in-out 0s 1 normal forwards;
 
-
   }
   
   main#carousel {
+    margin-top: 25px;
     grid-row: 1 / 2;
     grid-column: 1 / 8;
     width: 90vw;
@@ -30,6 +31,7 @@
   }
   
   div.item {
+    margin-bottom: 25px;
     border-radius: 20px;
     position: absolute;
     width: 300px;

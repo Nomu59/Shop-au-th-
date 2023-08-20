@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "../../components/Produits";
 import Star from "../../assets/img/star.png";
+
 import "../../assets/css/search.css";
 
 const Search = () => {
@@ -34,78 +35,84 @@ const Search = () => {
 
   return (
     <div>
-      <h1>Rechercher un article</h1>
+      <h1 className="text-3xl text-white">Rechercher un article</h1>
       <input
         type="text"
         autocomplete="off"
         name="text"
-        class="input"
+        className="input border m-auto text-center flex flex-row items-center justify-center "
         onChange={updateSearch}
         placeholder="Rechercher"
       />
 
       <div className="formCtn">
-        <div className="formRate">
-          <p>Trier par note</p>
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <input
-            type="radio"
-            id="choix5"
-            name="choix"
-            onChange={updateRadio}
-            value="5"
-          />
-          <br />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <input
-            type="radio"
-            id="choix4"
-            name="choix"
-            onChange={updateRadio}
-            value="4"
-          />
-          <br />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <input
-            type="radio"
-            id="choix3"
-            name="choix"
-            onChange={updateRadio}
-            value="3"
-          />
-          <br />
-          <img src={Star} alt="star" height={20} width={20} />
-          <img src={Star} alt="star" height={20} width={20} />
-          <input
-            type="radio"
-            id="choix2"
-            name="choix"
-            onChange={updateRadio}
-            value="2"
-          />
-          <br />
-          <img src={Star} alt="star" height={20} width={20} />
-          <input
-            type="radio"
-            id="choix1"
-            name="choix"
-            onChange={updateRadio}
-            value="1"
-          />
+        <div className="formRate h-50 w-40">
+          <p className="text-center">Trier par note</p>
+          <div className="flex flex-row justify-end">
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <input
+              type="radio"
+              id="choix5"
+              name="choix"
+              onChange={updateRadio}
+              value="5"
+            />
+          </div>
+          <div className="mt-1 flex flex-row justify-end">
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <input
+              type="radio"
+              id="choix4"
+              name="choix"
+              onChange={updateRadio}
+              value="4"
+            />
+          </div>
+          <div className="mt-1 flex flex-row justify-end">
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <input
+              type="radio"
+              id="choix3"
+              name="choix"
+              onChange={updateRadio}
+              value="3"
+            />
+          </div>
+          <div className="mt-1 flex flex-row justify-end">
+            <img src={Star} alt="star" height={25} width={25} />
+            <img src={Star} alt="star" height={25} width={25} />
+            <input
+              type="radio"
+              id="choix2"
+              name="choix"
+              onChange={updateRadio}
+              value="2"
+            />
+          </div>
+          <div className="mt-1 flex flex-row justify-end">
+            <img src={Star} alt="star" height={25} width={25} />
+            <input
+              type="radio"
+              id="choix1"
+              name="choix"
+              onChange={updateRadio}
+              value="1"
+            />
+          </div>
         </div>
 
         <br />
 
-        <div className="formPrix">
+        <div className="formPrix h-50 w-40">
           <p>Trier par prix</p>
           <input
             type="radio"
@@ -155,7 +162,7 @@ const Search = () => {
         </div>
       </div>
 
-      <div id="Ctn">
+      <div className="Ctn flex flex-row flex-wrap justify-center mt-12 text-xl">
         {produitsData.map((Produit, index) => {
           // crée un nouveau tableau product avec les valeur de produitsData qui respecte les conditions en dessous
           if (

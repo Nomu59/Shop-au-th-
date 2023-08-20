@@ -1,4 +1,9 @@
-* {
+hr {
+  animation: hrAnim 6s ease 0s infinite normal forwards;
+  animation-iteration-count: infinite;
+}
+
+/* * {
   margin: 0;
   padding: 0;
   --couleurPrincipale: #ffffffaa;
@@ -8,8 +13,7 @@ input[type="radio"] {
   background-color: aqua;
 }
 .boss {
-  color: white;
-  animation: rainbow-color 10s linear infinite;
+  color:#ffff00;
   font-size: 40px;
   font-family: "Aquatic";
 
@@ -33,7 +37,6 @@ hr {
   opacity: 0.4;
   margin-top: 50px;
   animation: hrAnim 6s ease 0s infinite normal forwards;
-  /* animation: rainbow-bg 2.5s linear; */
   animation-iteration-count: infinite;
 }
 
@@ -42,7 +45,6 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin-top: 50px; */
   font-size: 20px;
 }
 .Ctn img {
@@ -52,8 +54,7 @@ hr {
   border-radius: 20px;
   background-color: white;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  /* margin-top: 20px; */
-  /* margin-bottom: 10px; */
+
 }
 .Ctn div {
   animation: Gazo3 2s ease 0s 1 normal forwards;
@@ -74,4 +75,11 @@ hr {
 
 .price {
   font-weight: bold;
+} */
+
+.boss {
+  font-family: "Aquatic"
+}
+.Ctn div {
+  animation: Gazo3 1.5s ease 0s 1 normal forwards;
 }
