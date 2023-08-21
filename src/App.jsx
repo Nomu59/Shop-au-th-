@@ -7,6 +7,7 @@ import Login from "./Pages/Connexion/Login";
 import Search from "./Pages/Search/Search";
 import Cart from "./Pages/Cart/Cart";
 import Home from "./Pages/Home/Home";
+import Produits from "./components/Produits.jsx"
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
     <>
       <div className="app">
         <Navbar />
+        <Produits/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Connexion" element={<Login />} />

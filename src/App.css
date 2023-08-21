@@ -73,3 +73,18 @@ span img {
   width: 200px;
   text-align: center;
 }
+
+.prod-image{
+  height: 400px;
+  width: 400px;
+  margin-left: 10%;
+  margin-top: 1%;
+
+}
+
+.title{
+
+  margin-left: 10%;
+  margin-top: 5%;
+  
+}
