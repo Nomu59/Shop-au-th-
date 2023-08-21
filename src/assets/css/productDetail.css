@@ -1,0 +1,38 @@
+.divImg {
+float: left;
+}
+
+.divDesc {
+    margin-top: 50px;
+    float: right;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+}
+.produitDesc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+
+p {
+    color: black;
+    font-size: 25px;
+}
+
+
+
+.produitPrice {
+    text-align: center;
+    font-size: 50px;
+}
+.btn {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
