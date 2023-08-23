@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Product from "../../components/Produits";
 import Star from "../../assets/img/star.png";
-
 import "../../assets/css/search.css";
+import { Icon } from '@iconify/react';
 
 const Search = () => {
   //var
@@ -38,7 +38,7 @@ const Search = () => {
       <h1 className="text-3xl text-white">Rechercher un article</h1>
       <input
         type="text"
-        autocomplete="off"
+        autoComplete="off"
         name="text"
         className="input border m-auto text-center flex flex-row items-center justify-center "
         onChange={updateSearch}
@@ -46,14 +46,14 @@ const Search = () => {
       />
 
       <div className="formCtn">
-        <div className="formRate h-50 w-40">
+        <div className="formRate h-50 w-44">
           <p className="text-center">Trier par note</p>
-          <div className="flex flex-row justify-end">
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
+          <div className="flex flex-row justify-center">
+          <Icon icon="prime:star-fill" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
             <input
               type="radio"
               id="choix5"
@@ -62,11 +62,12 @@ const Search = () => {
               value="5"
             />
           </div>
-          <div className="mt-1 flex flex-row justify-end">
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
+          <div className="mt-1 flex flex-row justify-center">
+            <Icon icon="prime:star" height={25}/>
+            <Icon icon="prime:star-fill" height={25}/>
+            <Icon icon="prime:star-fill" height={25}/>
+            <Icon icon="prime:star-fill" height={25}/>
+            <Icon icon="prime:star-fill" height={25}/>
             <input
               type="radio"
               id="choix4"
@@ -75,10 +76,13 @@ const Search = () => {
               value="4"
             />
           </div>
-          <div className="mt-1 flex flex-row justify-end">
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
+          <div className="mt-1 flex flex-row justify-center">
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
+
             <input
               type="radio"
               id="choix3"
@@ -87,9 +91,12 @@ const Search = () => {
               value="3"
             />
           </div>
-          <div className="mt-1 flex flex-row justify-end">
-            <img src={Star} alt="star" height={25} width={25} />
-            <img src={Star} alt="star" height={25} width={25} />
+          <div className="mt-1 flex flex-row justify-center">
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
             <input
               type="radio"
               id="choix2"
@@ -98,8 +105,12 @@ const Search = () => {
               value="2"
             />
           </div>
-          <div className="mt-1 flex flex-row justify-end">
-            <img src={Star} alt="star" height={25} width={25} />
+          <div className="mt-1 flex flex-row justify-center">
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star" height={25}/>
+          <Icon icon="prime:star-fill" height={25}/>
             <input
               type="radio"
               id="choix1"
@@ -112,7 +123,7 @@ const Search = () => {
 
         <br />
 
-        <div className="formPrix h-50 w-40">
+        <div className="formPrix h-50 w-44">
           <p>Trier par prix</p>
           <input
             type="radio"
@@ -121,7 +132,7 @@ const Search = () => {
             value="5"
             onChange={updatePrix}
           />
-          <label for="prix1">5€</label>
+          <label className="text-base font-bold" htmlfor="prix1"> En dessous de 5€</label>
           <br />
           <input
             type="radio"
@@ -130,7 +141,7 @@ const Search = () => {
             value="10"
             onChange={updatePrix}
           />
-          <label for="prix2">10€</label>
+          <label className="text-base font-bold" htmlfor="prix1"> En dessous de 10€</label>
           <br />
           <input
             type="radio"
@@ -139,7 +150,7 @@ const Search = () => {
             value="25"
             onChange={updatePrix}
           />
-          <label for="prix3">25€</label>
+          <label className="text-base font-bold" htmlfor="prix1"> En dessous de 25€</label>
           <br />
           <input
             type="radio"
@@ -148,7 +159,7 @@ const Search = () => {
             value="50"
             onChange={updatePrix}
           />
-          <label for="prix4">50€</label>
+          <label className="text-base font-bold" htmlfor="prix1"> En dessous de 50€</label>
           <br />
           <input
             type="radio"
@@ -157,7 +168,7 @@ const Search = () => {
             value="100"
             onChange={updatePrix}
           />
-          <label for="prix5">100€</label>
+          <label className="text-base font-bold" htmlfor="prix1"> En dessous de 100€</label>
           <br />
         </div>
       </div>

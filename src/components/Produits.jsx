@@ -7,19 +7,19 @@ const Product = ({ product }) => {
   const [productData, setProductData] = useState(null);
 
   useEffect(() => {
-    
-    axios.get(`https://fakestoreapi.com/products/${product.id}`)
-      .then(response => {
+    axios
+      .get(`https://fakestoreapi.com/products/${product.id}`)
+      .then((response) => {
         setProductData(response.data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Une erreur s'est produite :", error);
       });
   }, [product.id]);
 
   const goToDesc = (id) => {
     navigate("/produit/" + id);
-  }
+  };
 
   const rateStar = (rate) => {
     const stars = [];
@@ -30,17 +30,27 @@ const Product = ({ product }) => {
   };
 
   return (
-    <div className="opacity-70 rounded-lg cursor-pointer p-2 bg-neutral-300 mt-5 w-48 text-center mb-2 ml-1 mr-1" onClick={() => goToDesc(product.id)}>
-      <div className="flex flex-row flex-wrap justify-center text-xl">
-        {productData ? (
+    <div
+      className="opacity-70 ml-5 mr-5  rounded-lg cursor-pointer p-2 bg-neutral-300 mt-5 w-48 text-center mb-2"
+      onClick={() => goToDesc(product.id)}
+    >
+      <div className="flex  flex-row flex-wrap justify-center text-xl">
+        {productData ? ( // si productData n'est pas null alors il affiche les truc en dessous
           <>
-            <img className="rounded-lg p-5 w-40 h-40 bg-white" src={productData.image} alt={productData.title} />
-            <p className="price font-bold text-left">{productData.price}€</p>
+            <img
+              className="rounded-lg p-5 w-40 h-40 bg-white"
+              src={productData.image}
+              alt={productData.title}
+            />
+            <p className="price font-bold text-right">{productData.price}€</p>
             <p className="productTitle text-lg">{productData.title}</p>
-            <p className="rate ">{rateStar(productData.rating.rate)} {productData.rating.rate}/5</p>
+            <p className="rate ">
+              {rateStar(productData.rating.rate)} {productData.rating.rate}/5
+            </p>
           </>
         ) : (
-          <p>Chargement en cours...</p>
+          //si il est null alors :
+          <p className="text-black">Chargement en cours...</p>
         )}
       </div>
     </div>
