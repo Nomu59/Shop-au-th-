@@ -28,7 +28,8 @@ h1 {
 .app {
   /* background-color: rgb(134, 154, 211); */
   /* background-color: aqua; */
-  background-image: url("./assets/img/bg.png");
+  background-image: url("./assets/img/bg2.png");
+  /* background-color: green; */
   background-size: contain;
   background-size: 100%;
 }

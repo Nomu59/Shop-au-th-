@@ -8,21 +8,22 @@ const Home = () => {
   const [produitsData, setProduitsData] = useState([]);
 
   useEffect(() => {
-    axios.get("https://fakestoreapi.com/products")
-      .then(response => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((response) => {
         setProduitsData(response.data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Une erreur s'est produite :", error);
       });
   }, []);
 
   return (
     <div>
-      <h1 className="boss text-yellow-500 text-3xl">Money Dynasty</h1>
+      <h1 className="boss text-white text-3xl">Money Dynasty</h1>
       <Caroussel />
-      <hr className="rounded-full	 border mt-12 w-4/5 m-auto bg-gray-500" />
-      <h2 className="text-white text-center text-3xl mt-10">
+      <hr className="rounded-full	h-1 border-0 mt-12 w-2/3 m-auto bg-gray-500" />
+      <h2 className="text-white text-center text-3xl mt-5">
         Nos produits phares:
       </h2>
       <div className="Ctn flex flex-row flex-wrap justify-center">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
 import Login from "./Pages/Connexion/Login";
 import Search from "./Pages/Search/Search";
 import Cart from "./Pages/Cart/Cart";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Cart" element={<Cart />} />
           <Route path="/produit/:id" Component={ProduitDetail} /> // :id pour recup l'id 
         </Routes>
+        {/* <Footer /> */}
       </div>
     </>
   );

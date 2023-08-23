@@ -11,7 +11,7 @@ const Caroussel = () => {
         <input type="radio" name="position" />
         <input type="radio" name="position" />
         <main id="carousel">
-          <div className="item"></div>
+        <div className="item text-white text-center "><a href="#">Lorem ipsum dolor sit.</a></div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
