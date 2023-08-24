@@ -9,6 +9,7 @@ import Cart from "./Pages/Cart/Cart";
 import Home from "./Pages/Home/Home";
 import ProduitDetail from "./components/ProduitDetail";
 import Footer from "./components/Footer";
+import Paiement from "./Pages/Paiement/Paiement.jsx";
 import "./App.css";
 import "./assets/css/navbar.css";
 import "./assets/css/animation.css";
@@ -26,8 +27,11 @@ function App() {
           <Route path="/Search" element={<Search />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/produit/:id" Component={ProduitDetail} /> // :id pour recup l'id 
+          <Route path="/Paiement" element={<Paiement />} />
         </Routes>
-         <Footer/> 
+        <div className="h-24"/>
+          <Footer/> 
+        
       </div>
     </>
   );

@@ -33,7 +33,7 @@ const Navbar = () => {
   }
   return (
     <nav className="overflow-x-hidden">
-      <nav className="bg-white dark:bg-black border-b rounded-b-2xl">
+      <nav className="bg-white dark:bg-black border-b rounded-b-2xl sticky">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
           <a href="/" className="flex items-center">
             <img
