@@ -13,7 +13,7 @@ const Navbar = () => {
     setConnexionStatus(statut ? parseInt(statut) : 0);
   }, []);
 
-  const handleLogout = () => {
+  const Logout = () => {
     localStorage.setItem("connexion", 0);
     localStorage.setItem("id", 0);
     localStorage.removeItem("user");
@@ -46,7 +46,7 @@ const Navbar = () => {
                   aria-current="page"
                   onClick={
                     connexionStatus === 1
-                      ? handleLogout
+                      ? Logout
                       : () => navigate("/Connexion")
                   }
                 >
@@ -81,7 +81,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/Categorie">
+                <Link to="/Jewelery">
                   <a
                     href="#"
                     className="text-2xl block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -99,3 +99,41 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+{/* <nav className="">
+<header className="">
+  <a className="clickable-image" href="">
+    <img src={Logo} alt="" className="image" />
+  </a>
+  <div className="container">
+    <input type="text" placeholder="Rechercher..." />
+    <a className="clickable-image2" href="">
+      <img src={Search} alt="" className="image2" />
+    </a>
+  </div>
+  <div className="dropdown">
+    <button className="dropdown-btn">Catégories</button>
+    <div className="dropdown-content">
+      <a href="#" class="bar-button">
+        Vêtements Homme
+      </a>
+      <a href="#" class="bar-button">
+        Vêtements Femme
+      </a>
+      <a href="#" class="bar-button">
+        Accessoires
+      </a>
+      <a href="#" class="bar-button">
+        Électronique
+      </a>
+    </div>
+  </div>
+  <a className="connexion" href="">
+    Connexion
+  </a>
+  <a className="clickable-image3" href="">
+    <img src={Panier} alt="panier" className="image3" />
+  </a>
+</header>
+</nav> */}

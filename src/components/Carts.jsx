@@ -17,16 +17,12 @@ const Carts = ({ product }) => {
       });
   }, [product.id]);
 
-  const goToDesc = (id) => {
-    navigate("/produit/" + id);
-  };
 
 
 
   return (
     <div
-      className="opacity-70 ml-52 mr-5  rounded-lg cursor-pointer p-2 bg-neutral-300 mt-5 w-5/12 text-center mb-2"
-      onClick={() => goToDesc(product.id)}
+      className="opacity-70 ml-52 mr-5  rounded-lg cursor-pointer p-2 bg-neutral-300 mt-5 w-5/12 text-center"
     >
       <div className="">
         {productData ? ( // si productData n'est pas null alors il affiche les truc en dessous
@@ -40,8 +36,10 @@ const Carts = ({ product }) => {
               />
             <p className="productTitle text-lg">{productData.title}</p>
               </div>
-            <p className="prodDescription text-lg">{productData.description}</p>
+            {/* <p className="prodDescription text-lg">{productData.description}</p> */}
+            <input type="number" className="" min="1" max="100" />
             <p className="price font-bold text-right">{productData.price}€</p>
+
           </>
         ) : (
           //si il est null alors :

@@ -1,0 +1,143 @@
+/*
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(30, 29, 29);
+  height: 80px;
+  padding: 0 30px;
+  margin: 0px;
+  width: 97%;
+  background-image: none;
+}
+
+input {
+  border-radius: 20px;
+  height: 50px;
+  width: 300px;
+  font-size: 20px;
+  background-image: url("public/Images/background.jpg");
+  text-align: center;
+  color: goldenrod;
+  border-style: solid;
+  border-color: goldenrod;
+}
+
+.clickable-image {
+  display: inline-block;
+  margin: 0; 
+  padding: 0;
+  border: 2px solid #ccc;
+  transition: transform 0.2s;
+  text-decoration: none; 
+  border: none;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+}
+
+.panier {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(30, 29, 29);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 1200px;
+  top: 190px;
+  transform: translate(
+    -50%,
+    -50%
+  ); 
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bar-button {
+  display: flex;
+  justify-content: center;
+  padding: 8px 16px;
+  margin: 10px; 
+  text-decoration: none;
+  background-image: url("public/Images/background.jpg");
+  border-style: solid;
+  border-color: goldenrod;
+}
+
+.bar-button:hover {
+  color: goldenrod;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-right: 425px;
+}
+
+.clickable-image2 {
+  display: inline-block;
+  margin-left: 10px; 
+}
+
+.image2 {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px; 
+}
+
+.clickable-image3 {
+  display: inline-block;
+  margin: 0; 
+  padding: 0; 
+  border: 2px solid #ccc;
+  transition: transform 0.2s;
+  text-decoration: none; 
+  border: none;
+}
+
+.image3 {
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+*/
