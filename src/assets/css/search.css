@@ -10,6 +10,10 @@
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
+.app {
+  background-repeat: repeat;
+}
+
 .formRate {
   animation: Gazo5 1.5s ease 0s 1 normal forwards;
   background-color: rgb(220, 220, 220);
@@ -62,7 +66,7 @@
   background-color: white;
   transform: scale(1.05);
   box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
-} 
+}
 .searchInput:hover {
   transform: scale(1.05);
   transition: 0.4s;
@@ -230,4 +234,3 @@ h1 {
   transform: scale(1.05);
   box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
 } */
-

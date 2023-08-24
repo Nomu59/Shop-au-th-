@@ -1,38 +1,62 @@
 .divImg {
-float: left;
-}
-
-.divDesc {
-    margin-top: 50px;
-    float: right;
-    background-color: white;
-    height: 500px;
-    width: 500px;
-}
-.produitDesc {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-
-}
-
-p {
-    color: black;
-    font-size: 25px;
-}
-
-
-
-.produitPrice {
-    text-align: center;
-    font-size: 50px;
-}
-.btn {
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-}
+    float: left;
+    
+    }
+    
+    .img{
+        padding: 20px;
+        background: white;
+        height: 500px;
+        border-radius: 15px;
+        margin-top: 60px;
+        height: 500px;
+        width: 500px;
+    }
+    
+    .divDesc {
+        padding: 20px;
+        border-radius: 15px;
+        float: right;
+        background-color: white;
+        height: 500px;
+        width: 500px;
+        margin-top: 60px ;
+    }
+    
+    .produitDesc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+    
+    p {
+        color: black;
+        font-size: 25px;
+    }
+    
+    .produitPrice {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .btn {
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+    }
+    
+    
+      .produitTitle{
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
+      }
+      
+    
+      .footer {
+        background-color: rgb(207, 204, 204);
+      }

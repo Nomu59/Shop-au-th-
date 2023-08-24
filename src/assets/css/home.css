@@ -3,7 +3,7 @@ hr {
   animation-iteration-count: infinite;
 }
 
-/* * {
+* {
   margin: 0;
   padding: 0;
   --couleurPrincipale: #ffffffaa;
@@ -48,15 +48,16 @@ hr {
   font-size: 20px;
 }
 .Ctn img {
+  margin: auto;
   padding: 20px;
   width: 150px;
   height: 150px;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
 
 }
-.Ctn div {
+.Ctn .pr {
   animation: Gazo3 2s ease 0s 1 normal forwards;
 
   opacity: 0.7;
@@ -75,7 +76,7 @@ hr {
 
 .price {
   font-weight: bold;
-} */
+} 
 
 .boss {
   font-family: "Aquatic"

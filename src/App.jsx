@@ -8,6 +8,7 @@ import Search from "./Pages/Search/Search";
 import Cart from "./Pages/Cart/Cart";
 import Home from "./Pages/Home/Home";
 import ProduitDetail from "./components/ProduitDetail";
+import Register from "./Pages/Register/Register";
 
 import "./App.css";
 import "./assets/css/navbar.css";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Connexion" element={<Login />} />
           <Route path="/Search" element={<Search />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/Register" element={<Register />} />
           <Route path="/produit/:id" Component={ProduitDetail} /> // :id pour recup l'id 
         </Routes>
         {/* <Footer /> */}

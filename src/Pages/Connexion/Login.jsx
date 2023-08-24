@@ -29,6 +29,7 @@ const Login = () => {
       console.log("Connecté");
       localStorage.setItem("connexion", 1);
       localStorage.setItem("user", id);
+      localStorage.setItem("id", user.id);
       // window.location.reload();
       navigate("/");
     } else {
@@ -41,35 +42,6 @@ const Login = () => {
     <div>
       //{" "}
       <div className="flex flex-row justify-center p-40">
-        {/* <div className="bg-slate-500 p-10 rounded-md"> */}
-        {/* <form onSubmit={Connexion}>
-          <p className="text-center">Connexion</p>
-          <input
-            type="text"
-            name="id"
-            id="inputId"
-            placeholder="Username"
-            value={id}
-            onChange={(e) => setId(e.target.value)}
-            className="mb-5 text-center rounded"
-          />
-          <br />
-          <input
-            type="password"
-            name="password"
-            id="inputPassword"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="text-center"
-          />
-          <br />
-          <button className=" bg-white mt-5 p-1 rounded-lg" type="submit">
-            <br />
-            <a href="/Inscription">S'inscrire</a>
-            Se connecter
-          </button>
-        </form> */}
         <div class="form-container">
           <p class="title">Connexion</p>
           <form onSubmit={Connexion} class="form">
@@ -137,7 +109,7 @@ const Login = () => {
           </div>
           <p class="signup">
             Pas de compte?
-            <a rel="noopener noreferrer" href="#" class="">
+            <a rel="noopener noreferrer" href="./Register" class="">
               S'inscrire
             </a>
           </p>

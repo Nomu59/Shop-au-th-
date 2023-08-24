@@ -19,16 +19,20 @@ const ProduitDetail = () => {
   return (
     <div>
       <div className="produitDesc">
+
         <div className="divImg">
-          <img src={Produit.image} alt={Produit.title} />
+          <img src={Produit.image} className="img" alt={Produit.title} />
         </div>
+
         <div className="divDesc">
           <p className="produitTitle">{Produit.title}</p>
-          <p className="produitPrice">{Produit.price}€</p>
+       
           <p className="produitDescTxt">{Produit.description}</p>
           {/* <p>{Produit.rating.rate}</p> */}
-          <a className="btn" href="#">Ajouter au panier</a>
+             <p className="produitPrice">{Produit.price}€</p>
+          <a className="btn"  href="#">Ajouter au panier</a>
         </div>
+
       </div>
     </div>
   );

@@ -192,6 +192,7 @@ const Search = () => {
           return null;
         })}
       </div>
+
     </div>
   );
 };
