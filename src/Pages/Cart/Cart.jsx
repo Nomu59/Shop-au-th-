@@ -2,7 +2,8 @@ import React from 'react'
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <div>
+      <p className="text-3xl font-bold underline">Cart</p>Cart</div>
   )
 }
 
