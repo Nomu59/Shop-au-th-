@@ -9,6 +9,7 @@ lerna-debug.log*
 
 backup
 backup_v1
+backup_v2
 node_modules
 dist
 dist-ssr
