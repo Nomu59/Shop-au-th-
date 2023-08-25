@@ -9,7 +9,7 @@ const Search = () => {
   const [produitsData, setProduitsData] = useState([]);
   const [filtre, setFiltre] = useState("");
   const [radioValue, setRadioValue] = useState("");
-  const [prix, setPrix] = useState("5000");
+  const [prix, setPrix] = useState("0");
 
   //recup data
   useEffect(() => {
@@ -179,7 +179,7 @@ const Search = () => {
           if (
             Produit.title.toLowerCase().indexOf(filtre) > -1 &&
             Produit.rating.rate > radioValue &&
-            Produit.price < prix
+            Produit.price > prix
 
             // recupere que les article qui:
             // contient la valeur du filtre, sinon renvoie -1

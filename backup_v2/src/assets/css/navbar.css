@@ -1,6 +1,4 @@
-/*
-
-header {
+header{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -13,27 +11,29 @@ header {
   margin: 0px;
   width: 97%;
   background-image: none;
+  
 }
 
-input {
+.search-bar{
   border-radius: 20px;
   height: 50px;
   width: 300px;
   font-size: 20px;
-  background-image: url("public/Images/background.jpg");
+  background-image: url('public/Images/background.jpg');
   text-align: center;
   color: goldenrod;
   border-style: solid;
   border-color: goldenrod;
+  
 }
 
 .clickable-image {
   display: inline-block;
-  margin: 0; 
-  padding: 0;
+  margin: 0; /* Réinitialise les marges */
+  padding: 0; /* Réinitialise les rembourrages */
   border: 2px solid #ccc;
   transition: transform 0.2s;
-  text-decoration: none; 
+  text-decoration: none; /* Supprime le soulignement du lien */
   border: none;
 }
 
@@ -42,22 +42,14 @@ input {
   height: 80px;
 }
 
-.panier {
+
+.panier{
   width: 80px;
   height: 80px;
   margin-bottom: 300px;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 30px;
-  font-size: 20px;
-}
-
-button {
+button{
   margin-top: 20px;
 }
 
@@ -70,6 +62,7 @@ button {
   cursor: pointer;
 }
 
+/* Style du menu déroulant (masqué par défaut) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -79,30 +72,33 @@ button {
   z-index: 1;
   left: 1200px;
   top: 190px;
-  transform: translate(
-    -50%,
-    -50%
-  ); 
+  transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
+/* Style des liens du menu déroulant */
 .bar-button {
   display: flex;
   justify-content: center;
-  padding: 8px 16px;
-  margin: 10px; 
+  padding: 8px 16px; /* Ajustez les paddings pour réduire l'espace vertical */
+  margin: 10px; /* Réinitialisez les marges pour éviter les espaces inutiles */
   text-decoration: none;
-  background-image: url("public/Images/background.jpg");
+  background-image: url('public/Images/background.jpg');
   border-style: solid;
   border-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
 }
 
+/* Effet de survol sur les liens du menu déroulant */
 .bar-button:hover {
-  color: goldenrod;
+  color: goldenrod; /* Couleur du texte au survol */
 }
 
-
+/* Changement du style au survol du bouton */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -115,22 +111,22 @@ button {
 
 .clickable-image2 {
   display: inline-block;
-  margin-left: 10px; 
+  margin-left: 10px; /* Ajoutez un espace entre l'input et l'image */
 }
 
 .image2 {
   width: 40px;
   height: 40px;
-  margin-bottom: 20px; 
+  margin-top: 5px; /* Ajustez cette valeur pour déplacer l'image vers le bas */
 }
 
 .clickable-image3 {
   display: inline-block;
-  margin: 0; 
-  padding: 0; 
+  margin: 0; /* Réinitialise les marges */
+  padding: 0; /* Réinitialise les rembourrages */
   border: 2px solid #ccc;
   transition: transform 0.2s;
-  text-decoration: none; 
+  text-decoration: none; /* Supprime le soulignement du lien */
   border: none;
 }
 
@@ -140,4 +136,10 @@ button {
   height: 50px;
 }
 
-*/
+.connexion {
+  text-decoration: none;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 30px;
+  font-size: 20px;
+}

@@ -47,7 +47,7 @@ const Login = () => {
           <form onSubmit={Connexion} class="form">
             <div class="input-group">
               <label for="username">Nom d'utilisateur</label>
-              <input
+              <inpsut
                 type="text"
                 name="username"
                 id="username"

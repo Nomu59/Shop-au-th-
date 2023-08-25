@@ -31,6 +31,5 @@ h1 {
   background-position: center;
   background-size: contain;
   background-repeat: repeat;
-  min-height: 100vh;
+  height: 100vh;
 }
-
